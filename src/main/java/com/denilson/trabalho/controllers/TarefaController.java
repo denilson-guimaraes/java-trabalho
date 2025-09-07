@@ -37,7 +37,7 @@ public class TarefaController {
 
     @PostMapping("")
     public Tarefa cadastro(@RequestBody Tarefa body) {
-        body.setId(0l);
+        body.setId(null);
         return repository.save(body);
     }
 
